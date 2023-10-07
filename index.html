@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- bootStrap -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- FontAwosome -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- My Css File -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 
+     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container py-lg-3">
+            <img class="ms-5 me-3" src="images/logo.png" alt="">
+            <div>
+                <a class="navbar-brand text-light d-block" href="#">Weather</a>
+                <small class="text-light">tagline goes here</small>
+            </div>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end mx-4" id="navbarSupportedContent">
+                <ul class="navbar-nav text-center mb-2 mb-lg -0">
+                    <li class="nav-item  border border-2 border-info rounded-pill px-3 mx-4">
+                        <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-light" href="#">News</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-light" href="#">Live Camera</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-light" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item mx-4">
+                        <a class="nav-link text-light" href="#">Contant</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid putBg py-lg-5">
+        <div class="container">
+            <div class="row p-0">
+                <form class="d-flex rounded-5 py-2" style="background-color: #1E202B;" role="search">
+                    <input class="rounded-5 form-control me-2 border border-0 text-white" type="search" id="input"
+                        placeholder="Find your Location.." aria-label="Search" style="background-color: #1E202B;">
+                    <button class="btn btn-outline-success rounded-5 px-5 bg-info text-white"
+                        type="submit">Find</button>
+                </form>
+            </div>
+            <div class="row my-5 ms-5 me-5 rounded-start-4 rounded-end-4" style="background-color:#323544 ;">
+                <div class="col-lg-4  p-0">
+                    <div class="d-flex justify-content-between p-2" style="background-color:#2D303D ;">
+                        <h1 class="fs-6 text-white" id="Day">Friday</h1>
+                        <h1 class="fs-6 text-white" id="Date">12August</h1>
+                    </div>
+                    <div class="pt-4 px-3">
+                        <h5 class="d-block text-white" id="city">Cairo</h5>
+                        <div class=" d-flex justify-content-between align-content-center">
+                            <p style="font-size: 100px;" class="fw-bold text-white" id="temp">28°C</p>
+                            <div>
+                                <img src="images/113.png" alt="" class="w-100 py-5 pe-4" id="imgData">
+                            </div>
+                        </div>
+                        <p class="text-info" id="textData">Partly cloudy</p>
+                        <div class="d-flex justify-content-start">
+                            <i></i>
+                            <p class="px-4">20%</p>
+                            <i></i>
+                            <p class="px-4">230%</p>
+                            <i></i>
+                            <p class="px-4">20%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                    <div class="p-2" style="background-color:#222530 ;">
+                        <h1 class="fs-6 text-white text-center" id="Day">Sunday</h1>
+                    </div>
+                    <div class="p-4 px-3 text-center" style="background-color:#262936;">
+                        <div class="text-center">
+                            <div class="w-100 py-4 text-center">
+                                <img id="ImgTomro" src="images/113.png" alt="" class="w-25 text-center">
+                            </div>
+                            <h3 class="text-white" id="todayMinTempp">39.8°c</h3>
+                            <P class="text-white" id="todayMaxTempp">24.4°</P>
+                            <p class="text-info text-center" id="nameTempToday">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 rounded-end-4 p-0">
+                    <div class="p-2" style="background-color:#2D303D ;">
+                        <h1 class="fs-6 text-white text-center" id="Day">Sunday</h1>
+                    </div>
+                    <div class="p-4 px-3 text-center">
+                        <div class="text-center">
+                            <div class="w-100 py-4 text-center">
+                                <img id="ImgafterTomro" src="images/113.png" alt="" class="w-25 text-center">
+                            </div>
+                            <h3 class="text-white" id="tommorMinTempp">39.8°c</h3>
+                            <P class="text-white" id="tommorMaxTempp">24.4°</P>
+                            <p class="text-info text-center" id="nameTempTommor">Sunny</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: #262936; ">
+        <div class="container">
+            <div class="row">
+                <div class="row py-5 w-75">
+                    <form class="d-flex rounded-5 py-2" style="background-color: #1E202B;" role="search">
+                        <input class="rounded-5 form-control me-2 border border-0 text-white" type="search"
+                            placeholder="Enter your email to subscribe...   " aria-label="Search"
+                            style="background-color: #1E202B;">
+                        <button class="btn btn-outline-success rounded-5 px-5 bg-info text-white"
+                            type="submit">Find</button>
+                    </form>
+                </div>
+                <p class="text-white pb-5">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- bootSrap Js -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- My Js file -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

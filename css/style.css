@@ -1,0 +1,21 @@
+body {
+    background-color: #1E202B;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.putBg {
+    background-image: url(../images/banner.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.form-control::placeholder {
+    color: rgb(158, 156, 156);
+    opacity: 1;
+}
+
+p,
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
